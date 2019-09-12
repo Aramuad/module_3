@@ -12,77 +12,46 @@ public class gradeReport {
 		System.out.println();
 		System.out.print("Enter the grade you got on the test: ");
 		int grade = sc.nextInt();
-		
-		int holder;
-		
-			if (grade == 100) {
-				
-				holder = 1;
-				
-			} else if (grade < 100 && grade >= 90) {
-				
-				holder = 2;
-				
-			} else if (grade < 90 && grade >= 80) {
-				
-				holder = 3;
-				
-			} else if (grade < 80 && grade >= 70) {
-				
-				holder = 4;
-				
-			} else if (grade < 70 && grade >= 60) {
-				
-				holder = 5;
-				
-			} else if (grade < 60 && grade >= 0) {
-				
-				holder = 6;
-				
-			} else {
-				
-				holder = 7;
-				
-			}
+		int holder = grade/10;
 		
 		switch (holder) {
 		
-			case 1:
+			case 10:
 				System.out.println();
 				System.out.println("You entered " + grade);
 				System.out.println("That grade is a perfect score. Well done.");
 				System.out.println();
 				break;
 				
-			case 2:
+			case 9:
 				System.out.println();
 				System.out.println("You entered " + grade);
 				System.out.println("That grade is well above average. Excellent work.");
 				System.out.println();
 				break;
 				
-			case 3:
+			case 8:
 				System.out.println();
 				System.out.println("You entered " + grade);
 				System.out.println("That grade is above average. Nice job.");
 				System.out.println();
 				break;
 				
-			case 4:
+			case 7:
 				System.out.println();
 				System.out.println("You entered " + grade);
 				System.out.println("That grade is average work.");
 				System.out.println();
 				break;
 				
-			case 5:
+			case 6:
 				System.out.println();
 				System.out.println("You entered " + grade);
 				System.out.println("That grade is not good, you should seek help!");
 				System.out.println();
 				break;
 				
-			case 6:
+			case 5:
 				System.out.println();
 				System.out.println("You entered " + grade);
 				System.out.println("That grade is not passing.");
